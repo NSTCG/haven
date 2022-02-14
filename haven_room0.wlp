@@ -1246,9 +1246,9 @@
                     "peer-networked-player-spawner": {
                         "headMesh": "9",
                         "headMaterial": "251",
-                        "leftHandMesh": "212",
+                        "leftHandMesh": "9",
                         "leftHandMaterial": "251",
-                        "rightHandMesh": "213",
+                        "rightHandMesh": "9",
                         "rightHandMaterial": "251"
                     }
                 }
