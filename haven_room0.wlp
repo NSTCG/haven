@@ -802,26 +802,27 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.001
+                        "attenuation": 0.001,
+                        "type": "sun"
                     }
                 }
             ],
             "transformation": [
-                1.0,
+                0.4904327,
+                -0.8714787,
+                -5.364416892916779e-7,
                 0.0,
+                0.5157524,
+                0.2902439,
+                0.8060758,
                 0.0,
+                -0.7024777,
+                -0.3953262,
+                0.5918124,
                 0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                4.3783836,
-                0.0,
+                -0.000003,
+                6.6872348,
+                -2.384185791015625e-7,
                 1.0
             ]
         },
@@ -1238,6 +1239,17 @@
                     "switch-vr-camera": {
                         "vrCamera": "118",
                         "desktopCamera": "120"
+                    }
+                },
+                {
+                    "type": "peer-networked-player-spawner",
+                    "peer-networked-player-spawner": {
+                        "headMesh": "9",
+                        "headMaterial": "251",
+                        "leftHandMesh": "212",
+                        "leftHandMaterial": "251",
+                        "rightHandMesh": "213",
+                        "rightHandMaterial": "251"
                     }
                 }
             ]
@@ -2408,6 +2420,77 @@
                 -0.4363292,
                 1.0
             ]
+        },
+        "281": {
+            "link": {
+                "name": "floor",
+                "file": "room.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                68.0999984,
+                                0.0099999,
+                                64.800003
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "282": {
+            "link": {
+                "name": "blueBuildings",
+                "file": "room.glb"
+            }
+        },
+        "283": {
+            "link": {
+                "name": "redBuildings",
+                "file": "room.glb"
+            }
+        },
+        "284": {
+            "link": {
+                "name": "deco",
+                "file": "room.glb"
+            }
+        },
+        "285": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.001,
+                        "type": "sun"
+                    }
+                }
+            ],
+            "transformation": [
+                0.8686875,
+                0.495358,
+                -3.129240440102876e-7,
+                0.0,
+                -0.3657134,
+                0.6413351,
+                -0.6744944,
+                0.0,
+                -0.334116,
+                0.5859251,
+                0.7382789,
+                0.0,
+                7.152557373046875e-7,
+                6.6872758,
+                -0.0000032,
+                1.0
+            ],
+            "parent": null
         }
     },
     "meshes": {
@@ -2720,6 +2803,30 @@
                 "file": "avatars.glb"
             },
             "name": "FistLeft"
+        },
+        "277": {
+            "link": {
+                "name": "Mesh_0",
+                "file": "room.glb"
+            }
+        },
+        "278": {
+            "link": {
+                "name": "Mesh_1",
+                "file": "room.glb"
+            }
+        },
+        "279": {
+            "link": {
+                "name": "Mesh_2",
+                "file": "room.glb"
+            }
+        },
+        "280": {
+            "link": {
+                "name": "Mesh_3",
+                "file": "room.glb"
+            }
         }
     },
     "textures": {
@@ -2823,6 +2930,18 @@
             "link": {
                 "name": "icon-unsilence.png",
                 "file": "textures\\icons\\icon-unsilence.png"
+            }
+        },
+        "273": {
+            "link": {
+                "name": "texture_0",
+                "file": "room.glb"
+            }
+        },
+        "274": {
+            "link": {
+                "name": "texture_1",
+                "file": "room.glb"
             }
         }
     },
@@ -2964,6 +3083,18 @@
             "link": {
                 "name": "icon-unsilence.png",
                 "file": "textures\\icons\\icon-unsilence.png"
+            }
+        },
+        "271": {
+            "link": {
+                "name": "lambert2SG_baseColor",
+                "file": "room.glb"
+            }
+        },
+        "272": {
+            "link": {
+                "name": "lambert3SG_baseColor",
+                "file": "room.glb"
             }
         }
     },
@@ -3368,6 +3499,18 @@
             "Flat": {
                 "flatTexture": "266"
             }
+        },
+        "275": {
+            "link": {
+                "name": "lambert2SG",
+                "file": "room.glb"
+            }
+        },
+        "276": {
+            "link": {
+                "name": "lambert3SG",
+                "file": "room.glb"
+            }
         }
     },
     "shaders": {
@@ -3480,7 +3623,8 @@
         "textures/icons/icon-mute.png",
         "textures/icons/icon-unmute.png",
         "textures/icons/icon-silence.png",
-        "textures/icons/icon-unsilence.png"
+        "textures/icons/icon-unsilence.png",
+        "room.glb"
     ],
     "animations": {},
     "skins": {},

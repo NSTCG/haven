@@ -55,16 +55,16 @@ WL.registerComponent(
         this.registeredNetworkCallbacks = {};
     },
     start: function () {
+      window.peerc = this;
       /* Try to get one of the two types of spawner component */
       this.networkPlayerSpawner =
-        this.networkPlayerPool.getComponent("avatar-spawner");
+        this.networkPlayerPool.getComponent("peer-networked-player-pool") ||
+        this.networkPlayerPool.getComponent("peer-networked-player-spawner");
       this.soundJoin = this.object.addComponent(
         'howler-audio-source', {
           src: 'sfx/plop.mp3',
           spatial: true
         });
-      if(this.avatarSelected)
-        this.host();
     },
     refresh: function () {
       this.streams = {};
@@ -83,7 +83,20 @@ WL.registerComponent(
     // Host functions
     //
     host: function () {
-      this.peer = new Peer(this.serverId);
+      this.peer = new Peer(this.serverId ,{
+        host: "localhost",
+        port: 9000,
+        path: '/broker',
+        debug: true,
+        config: {
+          'iceServers': [
+            { url: 'stun:arcade.uber.space:42120' },
+            { url: 'turn:arcade.uber.space:42120?transport=tcp', username: 'chess', credential: 'bGghEDegsXNrJaeGKp88mMPhPTTL' },
+            { url: 'turn:arcade.uber.space:42120?transport=udp', username: 'chess', credential: 'bGghEDegsXNrJaeGKp88mMPhPTTL' },
+          ]
+        },
+        });
+  
       this.peer.on("open", this._onHostOpen.bind(this));
       this.peer.on("error", this._onHostError.bind(this));
     },
@@ -100,7 +113,7 @@ WL.registerComponent(
     _onHostOpen: function (id) {
       isHost = true;
       this.serverId = id;
-      this.metadatas[this.serverId] = {avatarId: selectedAvatar, username: "Host"};
+      this.metadatas[this.serverId] = { username: "Host"};
       this.activePlayers[this.serverId] = {};
       for (let i = 0; i < this.connectionEstablishedCallbacks.length; i++) {
         this.connectionEstablishedCallbacks[i]();
@@ -378,7 +391,7 @@ WL.registerComponent(
     _clientOnOpen: function () {
       this.connection = this.peer.connect(this.connectionId, {
         // reliable: true,
-        metadata: { username: "TestName", avatarId: selectedAvatar },
+        metadata: { username: "TestName"},
       });
       this.connection.on("open", this._onClientConnected.bind(this));
       this.connection.on("data", this._onClientDataRecieved.bind(this));
@@ -503,3 +516,101 @@ WL.registerComponent(
     },
   }
 );
+
+WL.registerComponent("peer-networked-player-pool", {
+
+}, {
+  init: function() {
+    this.inactivePool = [];
+    for (let c of this.object.children) {
+      this.inactivePool.push(c.getComponent("peer-networked-player"));
+    }
+  },
+  getEntity: function() {
+    if (this.inactivePool.length) return this.inactivePool.shift();
+    console.error("peer-networked-player-pool: No more inactive entities");
+  },
+  returnEntity: function(entity) {
+    this.inactivePool.push(entity);
+  },
+}
+);
+
+WL.registerComponent("peer-networked-player", {
+  nameTextObject: { type: WL.Type.Object }
+}, {
+  init: function() {
+    for (let c of this.object.children) {
+      if(c.name == "Head") this.head = c;
+      if(c.name == "LeftHand") this.leftHand = c;
+      if(c.name == "RightHand") this.rightHand = c;
+    }
+  },
+
+  setName: function(name) {
+    if (this.nameTextObject) this.nameTextObject.getComponent("text").text = name;
+  },
+
+  reset: function() {
+    this.head.resetTranslationRotation();
+    this.rightHand.resetTranslationRotation();
+    this.leftHand.resetTranslationRotation();
+  },
+
+  setTransforms: function(transforms) {
+    this.head.transformLocal.set(new Float32Array(transforms.head));
+    this.head.setDirty();
+
+    this.rightHand.transformLocal.set(new Float32Array(transforms.rightHand));
+    this.rightHand.setDirty();
+
+    this.leftHand.transformLocal.set(new Float32Array(transforms.leftHand));
+    this.leftHand.setDirty();
+  },
+}
+);
+
+WL.registerComponent("peer-networked-player-spawner", {
+  headMesh: { type: WL.Type.Mesh },
+  headMaterial: { type: WL.Type.Material },
+  leftHandMesh: { type: WL.Type.Mesh },
+  leftHandMaterial: { type: WL.Type.Material },
+  rightHandMesh: { type: WL.Type.Mesh },
+  rightHandMaterial: { type: WL.Type.Material },
+}, {
+  init: function() {
+    this.count = 0;
+  },
+
+  getEntity: function() {
+    const player = WL.scene.addObject(1);
+    const children = WL.scene.addObjects(3, player);
+
+    children[0].name = "Head";
+    children[0].addComponent("mesh", {
+      mesh: this.headMesh,
+      material: this.headMaterial,
+    });
+
+    children[1].name = "LeftHand";
+    children[1].addComponent("mesh", {
+      mesh: this.leftHandMesh,
+      material: this.leftHandMaterial,
+    });
+
+    children[2].name = "RightHand";
+    children[2].addComponent("mesh", {
+      mesh: this.rightHandMesh,
+      material: this.rightHandMaterial,
+    });
+
+    player.name = `Player ${this.count++}`;
+    return player.addComponent("peer-networked-player");
+  },
+
+  returnEntity: function(player) {
+    console.log("returning:", player);
+    player.children.forEach((c) => { c.active = false; });
+    player.active = false;
+  },
+});
