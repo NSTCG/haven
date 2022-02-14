@@ -220,7 +220,19 @@ WL.registerComponent(
       if (!id)
         return console.error("peer-manager: Connection id parameter missing");
       if (!this.peer) {
-        this.peer = new Peer();
+        this.peer = new Peer({
+          host: "localhost",
+          port: 9000,
+          path: '/broker',
+          debug: true,
+          config: {
+            'iceServers': [
+              { url: 'stun:arcade.uber.space:42120' },
+              { url: 'turn:arcade.uber.space:42120?transport=tcp', username: 'chess', credential: 'bGghEDegsXNrJaeGKp88mMPhPTTL' },
+              { url: 'turn:arcade.uber.space:42120?transport=udp', username: 'chess', credential: 'bGghEDegsXNrJaeGKp88mMPhPTTL' },
+            ]
+          },
+          });;
         this.peer.on("open", this._clientOnOpen.bind(this));
         this.peer.on("disconnected", this._onDisconnected.bind(this));
         this.connectionId = id;
