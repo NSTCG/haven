@@ -1,0 +1,3554 @@
+{
+    "objects": {
+        "29": {
+            "link": {
+                "name": "room",
+                "file": "ca-hub.glb"
+            },
+            "components": [
+                null
+            ],
+            "deleted": true
+        },
+        "30": {
+            "link": {
+                "name": "ca-logo",
+                "file": "ca-hub.glb"
+            },
+            "transformation": [
+                1.9701646,
+                0.0001688,
+                -0.2995263,
+                0.0,
+                0.2995262,
+                -0.0000142,
+                1.9701646,
+                0.0,
+                0.0000675,
+                -0.8170493,
+                -0.0000161,
+                0.0,
+                -1.1069883,
+                3.4759857,
+                -5.9993352,
+                1.0
+            ],
+            "deleted": true
+        },
+        "31": {
+            "link": {
+                "name": "arcade-machine",
+                "file": "ca-hub.glb"
+            },
+            "components": [
+                {
+                    "mesh": {
+                        "material": "44"
+                    }
+                },
+                {
+                    "mesh": {
+                        "static": false,
+                        "material": "251"
+                    }
+                }
+            ],
+            "transformation": [
+                0.8557336,
+                0.0,
+                -0.5174165,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.5174165,
+                0.0,
+                0.8557336,
+                0.0,
+                3.2248167,
+                1.6782166,
+                -3.6005015,
+                1.0
+            ],
+            "deleted": true
+        },
+        "32": {
+            "link": {
+                "name": "arcade-machine.001",
+                "file": "ca-hub.glb"
+            },
+            "components": [
+                {
+                    "mesh": {
+                        "material": "46"
+                    }
+                },
+                {
+                    "mesh": {
+                        "static": false,
+                        "material": "251"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "33": {
+            "link": {
+                "name": "arcade-machine.002",
+                "file": "ca-hub.glb"
+            },
+            "components": [
+                {
+                    "mesh": {
+                        "material": "47",
+                        "static": false
+                    }
+                },
+                {
+                    "mesh": {
+                        "static": false,
+                        "material": "251"
+                    }
+                }
+            ],
+            "transformation": [
+                0.4004168,
+                0.0,
+                -0.9163331,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.9163331,
+                0.0,
+                0.4004168,
+                0.0,
+                0.5280799,
+                1.6782166,
+                -4.7300109,
+                1.0
+            ],
+            "deleted": true
+        },
+        "34": {
+            "link": {
+                "name": "arcade-machine.003",
+                "file": "ca-hub.glb"
+            },
+            "components": [
+                {
+                    "mesh": {
+                        "material": "48"
+                    }
+                },
+                {
+                    "mesh": {
+                        "static": false,
+                        "material": "251"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0988193,
+                0.0,
+                -0.9951063,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.9951063,
+                0.0,
+                0.0988193,
+                0.0,
+                -0.9202412,
+                1.6782164,
+                -4.5824923,
+                1.0
+            ],
+            "deleted": true
+        },
+        "35": {
+            "link": {
+                "name": "arcade-machine.004",
+                "file": "ca-hub.glb"
+            },
+            "components": [
+                {
+                    "mesh": {
+                        "material": "49",
+                        "static": false
+                    }
+                },
+                {
+                    "mesh": {
+                        "static": false,
+                        "material": "251"
+                    }
+                }
+            ],
+            "transformation": [
+                -0.2144407,
+                0.0,
+                -0.9767369,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.9767369,
+                0.0,
+                -0.2144407,
+                0.0,
+                -2.2567143,
+                1.6782164,
+                -4.0265588,
+                1.0
+            ],
+            "deleted": true
+        },
+        "36": {
+            "link": {
+                "name": "Sun",
+                "file": "ca-hub.glb"
+            },
+            "deleted": true
+        },
+        "37": {
+            "link": {
+                "name": "big_tv",
+                "file": "ca-hub.glb"
+            },
+            "deleted": true
+        },
+        "38": {
+            "link": {
+                "name": "big_arcade",
+                "file": "ca-hub.glb"
+            },
+            "components": [
+                null
+            ],
+            "deleted": true
+        },
+        "39": {
+            "link": {
+                "name": "rondell",
+                "file": "ca-hub.glb"
+            },
+            "transformation": [
+                0.8557336,
+                0.0,
+                -0.5174165,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.5174165,
+                0.0,
+                0.8557336,
+                0.0,
+                0.0,
+                0.0,
+                -0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "40": {
+            "name": "Title",
+            "parent": "31",
+            "components": [
+                {
+                    "type": "text"
+                }
+            ],
+            "transformation": [
+                0.2612117,
+                0.0,
+                0.9652832,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.9652832,
+                0.0,
+                0.2612117,
+                0.0,
+                -0.4353599,
+                0.5423191,
+                0.117801,
+                1.0
+            ],
+            "deleted": true
+        },
+        "43": {
+            "name": "Player",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.7999999,
+                0.0,
+                1.0
+            ],
+            "parent": "252",
+            "components": [
+                {
+                    "type": "wasd-controls",
+                    "wasd-controls": {
+                        "headObject": "120",
+                        "speed": 0.1
+                    }
+                },
+                {
+                    "type": "player-height"
+                }
+            ]
+        },
+        "52": {
+            "name": "Title.001",
+            "parent": "32",
+            "components": [
+                {
+                    "type": "text"
+                }
+            ],
+            "transformation": [
+                0.2983998,
+                0.0,
+                0.9544435,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.9544435,
+                0.0,
+                0.2983998,
+                0.0,
+                -0.3885521,
+                0.5402226,
+                0.1215029,
+                1.0
+            ],
+            "deleted": true
+        },
+        "53": {
+            "name": "Title.002",
+            "parent": "33",
+            "components": [
+                {
+                    "type": "text"
+                }
+            ],
+            "transformation": [
+                0.3024442,
+                0.0,
+                0.9531583,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.9531583,
+                0.0,
+                0.3024442,
+                0.0,
+                -0.3951663,
+                0.5375372,
+                0.1578718,
+                1.0
+            ],
+            "deleted": true
+        },
+        "54": {
+            "name": "Title.003",
+            "parent": "34",
+            "components": [
+                {
+                    "type": "text"
+                }
+            ],
+            "transformation": [
+                0.3280603,
+                0.0,
+                0.9446224,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.9446224,
+                0.0,
+                0.3280603,
+                0.0,
+                -0.4050006,
+                0.5434092,
+                0.1466045,
+                1.0
+            ],
+            "deleted": true
+        },
+        "55": {
+            "name": "Title.004",
+            "parent": "35",
+            "components": [
+                {
+                    "type": "text"
+                }
+            ],
+            "transformation": [
+                0.2975862,
+                0.0,
+                0.9546919,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.9546919,
+                0.0,
+                0.2975862,
+                0.0,
+                -0.4025392,
+                0.5156645,
+                0.1254792,
+                1.0
+            ],
+            "deleted": true
+        },
+        "102": {
+            "link": {
+                "name": "LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "43",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.1020867,
+                0.3116123,
+                -0.3239979,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand left"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "103": {
+            "link": {
+                "name": "Bottom_Button<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "102"
+        },
+        "104": {
+            "link": {
+                "name": "ControllerMain<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "transformation": [
+                -0.0099999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0051092,
+                -0.0085962,
+                0.0,
+                0.0,
+                -0.0085962,
+                0.0051092,
+                0.0,
+                -2.9802322387695329e-8,
+                0.0,
+                -0.0321104,
+                1.0
+            ],
+            "parent": "102"
+        },
+        "105": {
+            "link": {
+                "name": "GripTrigger<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "102"
+        },
+        "106": {
+            "link": {
+                "name": "Option_Button<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "102"
+        },
+        "107": {
+            "link": {
+                "name": "Thumbstick<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "102"
+        },
+        "108": {
+            "link": {
+                "name": "Top_Button<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "102"
+        },
+        "109": {
+            "link": {
+                "name": "Trigger<LeftQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "102"
+        },
+        "110": {
+            "link": {
+                "name": "RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "43",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.1137484,
+                -1.8015944,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "hand right"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "111": {
+            "link": {
+                "name": "Bottom_Button.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "110"
+        },
+        "112": {
+            "link": {
+                "name": "ControllerMain.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "110"
+        },
+        "113": {
+            "link": {
+                "name": "GripTrigger.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "110"
+        },
+        "114": {
+            "link": {
+                "name": "Option_Button.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "110"
+        },
+        "115": {
+            "link": {
+                "name": "Thumbstick.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "110"
+        },
+        "116": {
+            "link": {
+                "name": "Top_Button.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "110"
+        },
+        "117": {
+            "link": {
+                "name": "Trigger.001<RightQuestController",
+                "file": "quest_controllers.glb"
+            },
+            "parent": "110"
+        },
+        "118": {
+            "name": "LeftEye",
+            "parent": "43",
+            "components": [
+                {
+                    "type": "view",
+                    "active": false
+                },
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye left"
+                    },
+                    "active": true
+                }
+            ]
+        },
+        "119": {
+            "name": "RightEye",
+            "parent": "43",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "eye right"
+                    }
+                },
+                {
+                    "type": "view",
+                    "active": false
+                }
+            ]
+        },
+        "120": {
+            "name": "NonVrPlayer",
+            "components": [
+                {
+                    "type": "view"
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "collisionGroup": 1,
+                        "cursorObject": "161",
+                        "handedness": "none"
+                    }
+                },
+                {
+                    "type": "mouse-look"
+                },
+                {
+                    "type": "vr-mode-active-switch",
+                    "vr-mode-active-switch": {
+                        "activateComponents": "in non-VR",
+                        "affectChildren": false
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.384185791015625e-7,
+                -0.3515384,
+                0.0,
+                1.0
+            ],
+            "parent": "43"
+        },
+        "121": {
+            "name": "WonderleapAd",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "45"
+                    }
+                },
+                {
+                    "type": "wonderleap-ad",
+                    "wonderleap-ad": {
+                        "camera": "119",
+                        "auId": "d949aa96-47e4-4840-b45f-bf2c8b266942"
+                    }
+                }
+            ],
+            "transformation": [
+                -0.8560105,
+                0.0,
+                0.5169726,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.5169726,
+                0.0,
+                -0.8560105,
+                0.0,
+                7.0742845,
+                2.4547107,
+                3.6836919,
+                1.0
+            ],
+            "deleted": true
+        },
+        "143": {
+            "name": "ThumbstickLabelPrevious",
+            "parent": "102",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Previous",
+                        "justification": "line",
+                        "material": "145"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0999998,
+                -2.0981070747438938e-7,
+                -6.790027384795394e-8,
+                0.0,
+                -5.96485918435974e-8,
+                0.0039081,
+                -0.0999232,
+                0.0,
+                2.123037745604961e-7,
+                0.0999232,
+                0.0039081,
+                0.0,
+                -0.0566564,
+                0.0148453,
+                -0.0203183,
+                1.0
+            ]
+        },
+        "144": {
+            "name": "ThumbstickLabelNext",
+            "parent": "102",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "material": "145",
+                        "text": "Next",
+                        "justification": "line"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0999996,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0055393,
+                -0.0998479,
+                0.0,
+                0.0,
+                0.0998485,
+                -0.0055393,
+                0.0,
+                0.0082845,
+                0.0149998,
+                -0.0199995,
+                1.0
+            ]
+        },
+        "147": {
+            "name": "Light",
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "attenuation": 0.001
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                4.3783836,
+                0.0,
+                1.0
+            ]
+        },
+        "148": {
+            "name": "CursorPointRight",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "149"
+                    }
+                }
+            ],
+            "transformation": [
+                0.025,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.025,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.025,
+                0.0,
+                0.003011,
+                -1.0523539,
+                -2.2365064,
+                1.0
+            ],
+            "parent": "43"
+        },
+        "150": {
+            "name": "PoweredBy",
+            "parent": "29",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Powered by Wonderland Engine",
+                        "material": "151"
+                    }
+                }
+            ],
+            "transformation": [
+                -1.2999886,
+                0.0,
+                -0.0068984,
+                0.0,
+                0.0,
+                1.2999999,
+                0.0,
+                0.0,
+                0.0068984,
+                0.0,
+                -1.2999886,
+                0.0,
+                -5.6275711,
+                0.1660478,
+                6.7804269,
+                1.0
+            ],
+            "deleted": true
+        },
+        "152": {
+            "name": "CreatedBy",
+            "parent": "29",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Created by:\n\nFerry Abt\nFlorian Isikci\nJonathan Hale",
+                        "material": "153"
+                    }
+                }
+            ],
+            "transformation": [
+                -2.0003931,
+                0.0,
+                -0.0002276,
+                0.0,
+                0.0,
+                2.0,
+                0.0,
+                0.0,
+                0.0002276,
+                0.0,
+                -2.0003931,
+                0.0,
+                -5.6050968,
+                1.3677097,
+                6.7489218,
+                1.0
+            ],
+            "deleted": true
+        },
+        "158": {
+            "name": "CursorBeam",
+            "parent": "163",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "149"
+                    }
+                }
+            ],
+            "transformation": [
+                0.002,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.002,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                -0.3,
+                1.0
+            ]
+        },
+        "159": {
+            "name": "CursorBeam",
+            "parent": "162",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "8",
+                        "material": "149"
+                    }
+                }
+            ],
+            "transformation": [
+                0.002,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.002,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.2,
+                0.0,
+                0.0,
+                0.0,
+                -0.3,
+                1.0
+            ]
+        },
+        "160": {
+            "parent": "43",
+            "deleted": true
+        },
+        "161": {
+            "name": "CursorPointLeft",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "9",
+                        "material": "149"
+                    }
+                }
+            ],
+            "transformation": [
+                0.025,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.025,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.025,
+                0.0,
+                0.0030088,
+                -1.0523467,
+                -2.2365105,
+                1.0
+            ],
+            "parent": "43"
+        },
+        "162": {
+            "name": "CursorLeft",
+            "parent": "43",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray left"
+                    }
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "161",
+                        "cursorRayObject": "159"
+                    }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "teleportIndicatorMeshObject": "187",
+                        "camRoot": "252",
+                        "cam": "120",
+                        "eyeLeft": "118",
+                        "eyeRight": "119",
+                        "handedness": "left",
+                        "floorGroup": 0
+                    }
+                },
+                {
+                    "type": "vr-mode-active-switch"
+                }
+            ]
+        },
+        "163": {
+            "name": "CursorRight",
+            "parent": "43",
+            "components": [
+                {
+                    "type": "input",
+                    "input": {
+                        "type": "ray right"
+                    }
+                },
+                {
+                    "type": "cursor",
+                    "cursor": {
+                        "cursorObject": "148",
+                        "cursorRayObject": "158"
+                    }
+                }
+            ]
+        },
+        "166": {
+            "link": {
+                "name": "Arrow",
+                "file": "arrow.glb"
+            },
+            "transformation": [
+                2.088797,
+                0.0,
+                2.1533579,
+                0.0,
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                -2.1533579,
+                0.0,
+                2.088797,
+                0.0,
+                -3.3174667,
+                1.4794611,
+                -3.2279736,
+                1.0
+            ],
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.3
+                        },
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.05,
+                                0.1199999,
+                                0.15
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                }
+            ],
+            "deleted": true
+        },
+        "167": {
+            "link": {
+                "name": "Arrow",
+                "file": "arrow.glb"
+            },
+            "transformation": [
+                2.1891431,
+                0.0,
+                -2.0512838,
+                0.0,
+                0.0,
+                3.0,
+                0.0,
+                0.0,
+                2.0512838,
+                0.0,
+                2.1891431,
+                0.0,
+                4.1633152,
+                1.4794692,
+                -2.9251158,
+                1.0
+            ],
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.3
+                        },
+                        "collider": "box",
+                        "box": {
+                            "extents": [
+                                0.05,
+                                0.1199999,
+                                0.15
+                            ]
+                        },
+                        "groups": 2
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                }
+            ],
+            "parent": null,
+            "name": "ArrowNext",
+            "deleted": true
+        },
+        "184": {
+            "name": "Floor",
+            "parent": "29",
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "box",
+                        "aabb": {
+                            "extents": [
+                                3.0,
+                                0.1,
+                                3.2999999
+                            ]
+                        },
+                        "box": {
+                            "extents": [
+                                6.9,
+                                0.1,
+                                5.0999999
+                            ]
+                        },
+                        "groups": 129
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.5026075,
+                -0.1,
+                1.0202317,
+                1.0
+            ],
+            "deleted": true
+        },
+        "187": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "teleport-indicator.glb"
+            }
+        },
+        "188": {
+            "name": "Networking",
+            "components": [
+                {
+                    "type": "peer-manager-auto-join",
+                    "peer-manager-auto-join": {
+                        "serverId": "haven_room0",
+                        "playerHead": "120",
+                        "playerRightHand": "162",
+                        "playerLeftHand": "163",
+                        "networkPlayerPool": "188"
+                    }
+                },
+                {
+                    "type": "switch-vr-camera",
+                    "switch-vr-camera": {
+                        "vrCamera": "118",
+                        "desktopCamera": "120"
+                    }
+                }
+            ]
+        },
+        "189": {
+            "name": "Empty",
+            "deleted": true
+        },
+        "216": {
+            "link": {
+                "name": "character_witch",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "witch",
+                        "part": "body"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.1920909059881525e-7,
+                0.9999982,
+                0.0,
+                0.0,
+                -0.9999982,
+                -1.1920909059881525e-7,
+                0.0,
+                5.7151055,
+                0.0,
+                11.2612419,
+                1.0
+            ],
+            "deleted": true
+        },
+        "217": {
+            "link": {
+                "name": "character_witchHat<character_witch",
+                "file": "avatars.glb"
+            },
+            "parent": "216",
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "witch"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9653535,
+                -0.2609453,
+                0.0,
+                0.0,
+                0.2609453,
+                0.9653535,
+                0.0,
+                9.5367431640625e-7,
+                -0.0708449,
+                -0.7315415,
+                1.0
+            ],
+            "deleted": true
+        },
+        "218": {
+            "link": {
+                "name": "character_rogueBody",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "rogue",
+                        "part": "body"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.192090977042426e-7,
+                0.9999983,
+                0.0,
+                0.0,
+                -0.9999983,
+                -1.192090977042426e-7,
+                0.0,
+                1.7151093,
+                0.0,
+                11.2612419,
+                1.0
+            ],
+            "deleted": true
+        },
+        "219": {
+            "link": {
+                "name": "character_rogueHead<character_rogueBody",
+                "file": "avatars.glb"
+            },
+            "parent": "218",
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "rogue"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "220": {
+            "link": {
+                "name": "character_mageBody",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "mage",
+                        "part": "body"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.192090977042426e-7,
+                0.9999983,
+                0.0,
+                0.0,
+                -0.9999983,
+                -1.192090977042426e-7,
+                0.0,
+                3.7151067,
+                0.0,
+                11.2612419,
+                1.0
+            ],
+            "deleted": true
+        },
+        "221": {
+            "link": {
+                "name": "character_mageHead<character_mageBody",
+                "file": "avatars.glb"
+            },
+            "parent": "220",
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "mage"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "222": {
+            "link": {
+                "name": "character_knightBody",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "knight",
+                        "part": "body"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.192090977042426e-7,
+                0.9999983,
+                0.0,
+                0.0,
+                -0.9999983,
+                -1.192090977042426e-7,
+                0.0,
+                -0.284889,
+                0.0,
+                11.2612419,
+                1.0
+            ],
+            "deleted": true
+        },
+        "223": {
+            "link": {
+                "name": "character_knightHead<character_knightBody",
+                "file": "avatars.glb"
+            },
+            "parent": "222",
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "knight"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "224": {
+            "link": {
+                "name": "character_jack",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "body"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.192090977042426e-7,
+                0.9999983,
+                0.0,
+                0.0,
+                -0.9999983,
+                -1.192090977042426e-7,
+                0.0,
+                -2.2848873,
+                0.0,
+                11.2612419,
+                1.0
+            ],
+            "deleted": true
+        },
+        "225": {
+            "link": {
+                "name": "character_jackHat<character_jack",
+                "file": "avatars.glb"
+            },
+            "parent": "224",
+            "components": [
+                null,
+                {
+                    "type": "avatar-part"
+                }
+            ],
+            "deleted": true
+        },
+        "226": {
+            "link": {
+                "name": "character_duck",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "duck",
+                        "part": "body"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.192090977042426e-7,
+                0.9999983,
+                0.0,
+                0.0,
+                -0.9999983,
+                -1.192090977042426e-7,
+                0.0,
+                -4.2848834,
+                0.0,
+                11.2612419,
+                1.0
+            ],
+            "deleted": true
+        },
+        "227": {
+            "link": {
+                "name": "character_duckHead<character_duck",
+                "file": "avatars.glb"
+            },
+            "parent": "226",
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "duck"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "228": {
+            "link": {
+                "name": "character_dog",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "dog",
+                        "part": "body"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.192090977042426e-7,
+                0.9999983,
+                0.0,
+                0.0,
+                -0.9999983,
+                -1.192090977042426e-7,
+                0.0,
+                -6.2848854,
+                0.0,
+                11.2612419,
+                1.0
+            ],
+            "deleted": true
+        },
+        "229": {
+            "link": {
+                "name": "character_dogHead<character_dog",
+                "file": "avatars.glb"
+            },
+            "parent": "228",
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "dog",
+                        "part": "head"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "230": {
+            "link": {
+                "name": "character_bear",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "bear",
+                        "part": "body"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.192090977042426e-7,
+                0.9999983,
+                0.0,
+                0.0,
+                -0.9999983,
+                -1.192090977042426e-7,
+                0.0,
+                7.7151045,
+                0.0,
+                11.2612419,
+                1.0
+            ],
+            "deleted": true
+        },
+        "231": {
+            "link": {
+                "name": "character_bearHead<character_bear",
+                "file": "avatars.glb"
+            },
+            "parent": "230",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9999998,
+                -0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.9999998,
+                0.0,
+                0.0,
+                0.0,
+                -0.703711,
+                1.0
+            ],
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "bear"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "232": {
+            "link": {
+                "name": "character_barbarianBody",
+                "file": "avatars.glb"
+            },
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.192090977042426e-7,
+                0.9999983,
+                0.0,
+                0.0,
+                -0.9999983,
+                -1.192090977042426e-7,
+                0.0,
+                -8.2848815,
+                0.0,
+                11.2612419,
+                1.0
+            ],
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "barbarian",
+                        "part": "body"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "233": {
+            "link": {
+                "name": "character_barbarianHead<character_barbarianBody",
+                "file": "avatars.glb"
+            },
+            "parent": "232",
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "avatarId": "barbarian"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "234": {
+            "link": {
+                "name": "HandLeft",
+                "file": "avatars.glb"
+            },
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                -1.3729269,
+                0.3138446,
+                13.2858486,
+                1.0
+            ],
+            "deleted": true
+        },
+        "235": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                -2.0674953,
+                0.3138446,
+                13.2858486,
+                1.0
+            ],
+            "deleted": true
+        },
+        "236": {
+            "link": {
+                "name": "FistLeft",
+                "file": "avatars.glb"
+            },
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                -2.0674953,
+                0.3138446,
+                13.2858486,
+                1.0
+            ],
+            "deleted": true
+        },
+        "237": {
+            "link": {
+                "name": "FistRight",
+                "file": "avatars.glb"
+            },
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                -2.0674953,
+                0.3138446,
+                13.2858486,
+                1.0
+            ],
+            "deleted": true
+        },
+        "238": {
+            "link": {
+                "name": "FistLeft",
+                "file": "avatars.glb"
+            },
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                -4.3160629,
+                0.3138446,
+                13.2858486,
+                1.0
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "239": {
+            "link": {
+                "name": "FistLeft",
+                "file": "avatars.glb"
+            },
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1098994,
+                0.0,
+                -5.9945011,
+                0.3138446,
+                13.2858486,
+                1.0
+            ],
+            "parent": null,
+            "deleted": true
+        },
+        "240": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.3101052687147785e-8,
+                -0.1098995,
+                0.0,
+                0.0,
+                0.1098995,
+                -1.3101052687147785e-8,
+                0.0,
+                0.4380252,
+                0.8232784,
+                -0.3138453,
+                1.0
+            ],
+            "parent": "224",
+            "name": "hand",
+            "deleted": true
+        },
+        "241": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand",
+                        "avatarId": "knight"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.3101052687147785e-8,
+                -0.1098995,
+                0.0,
+                0.0,
+                0.1098995,
+                -1.3101052687147785e-8,
+                0.0,
+                0.4380252,
+                0.8232784,
+                -0.3138453,
+                1.0
+            ],
+            "parent": "222",
+            "name": "hand",
+            "deleted": true
+        },
+        "242": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.3101052687147785e-8,
+                -0.1098995,
+                0.0,
+                0.0,
+                0.1098995,
+                -1.3101052687147785e-8,
+                0.0,
+                0.4380252,
+                0.8232784,
+                -0.3138453,
+                1.0
+            ],
+            "parent": "218",
+            "name": "hand",
+            "deleted": true
+        },
+        "243": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand",
+                        "avatarId": "witch"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.3101052687147785e-8,
+                -0.1098995,
+                0.0,
+                0.0,
+                0.1098995,
+                -1.3101052687147785e-8,
+                0.0,
+                0.4380252,
+                0.8232784,
+                -0.3138453,
+                1.0
+            ],
+            "parent": "216",
+            "name": "hand",
+            "deleted": true
+        },
+        "244": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand",
+                        "avatarId": "mage"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.3101052687147785e-8,
+                -0.1098995,
+                0.0,
+                0.0,
+                0.1098995,
+                -1.3101052687147785e-8,
+                0.0,
+                0.4380252,
+                0.8232784,
+                -0.3138453,
+                1.0
+            ],
+            "parent": "220",
+            "name": "hand",
+            "deleted": true
+        },
+        "245": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand",
+                        "avatarId": "duck"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.3101052687147785e-8,
+                -0.1098995,
+                0.0,
+                0.0,
+                0.1098995,
+                -1.3101052687147785e-8,
+                0.0,
+                0.4380252,
+                0.8232784,
+                -0.3138453,
+                1.0
+            ],
+            "parent": "226",
+            "name": "hand",
+            "deleted": true
+        },
+        "246": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand",
+                        "avatarId": "dog"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.3101052687147785e-8,
+                -0.1098995,
+                0.0,
+                0.0,
+                0.1098995,
+                -1.3101052687147785e-8,
+                0.0,
+                0.4380252,
+                0.8232784,
+                -0.3138453,
+                1.0
+            ],
+            "parent": "228",
+            "name": "hand",
+            "deleted": true
+        },
+        "247": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand",
+                        "avatarId": "bear"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.3101052687147785e-8,
+                -0.1098995,
+                0.0,
+                0.0,
+                0.1098995,
+                -1.3101052687147785e-8,
+                0.0,
+                0.4380252,
+                0.8232784,
+                -0.3138453,
+                1.0
+            ],
+            "parent": "230",
+            "name": "hand",
+            "deleted": true
+        },
+        "248": {
+            "link": {
+                "name": "HandRight",
+                "file": "avatars.glb"
+            },
+            "components": [
+                null,
+                {
+                    "type": "avatar-part",
+                    "avatar-part": {
+                        "part": "hand",
+                        "avatarId": "barbarian"
+                    }
+                }
+            ],
+            "transformation": [
+                0.1098994,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -1.3101052687147785e-8,
+                -0.1098995,
+                0.0,
+                0.0,
+                0.1098995,
+                -1.3101052687147785e-8,
+                0.0,
+                0.4380252,
+                0.8232784,
+                -0.3138453,
+                1.0
+            ],
+            "parent": "232",
+            "name": "hand",
+            "deleted": true
+        },
+        "249": {
+            "name": "AvatarSelectionMenu",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.9481997,
+                -1.9739577,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "avatar-selection",
+                    "avatar-selection": {
+                        "peerManagerObject": "188"
+                    }
+                }
+            ],
+            "deleted": true
+        },
+        "250": {
+            "name": "Title",
+            "parent": "249",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Select your avatar:"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.2462126,
+                0.3239011,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "252": {
+            "name": "TrackedSpace"
+        },
+        "253": {
+            "name": "MuteButton",
+            "parent": "102",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "262"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0399999
+                        }
+                    }
+                },
+                {
+                    "type": "button-toggle",
+                    "button-toggle": {
+                        "activeMaterial": "256",
+                        "inativeMaterial": "256",
+                        "inactiveMaterial": "255"
+                    }
+                },
+                {
+                    "type": "button-mute",
+                    "button-mute": {
+                        "peerManagerObject": "188"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0238338,
+                0.0,
+                -0.0182194,
+                0.0,
+                0.0,
+                0.0299999,
+                0.0,
+                0.0,
+                0.0182194,
+                0.0,
+                0.0238338,
+                0.0,
+                -0.0566316,
+                0.0844862,
+                -2.0489096641540528e-8,
+                1.0
+            ]
+        },
+        "267": {
+            "name": "MuteButton",
+            "parent": "120",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "262"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0399999
+                        }
+                    }
+                },
+                {
+                    "type": "button-toggle",
+                    "button-toggle": {
+                        "activeMaterial": "256",
+                        "inativeMaterial": "256",
+                        "inactiveMaterial": "255"
+                    }
+                },
+                {
+                    "type": "button-mute",
+                    "button-mute": {
+                        "peerManagerObject": "188"
+                    }
+                }
+            ],
+            "transformation": [
+                0.0299999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0299999,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0299999,
+                0.0,
+                -0.3073905,
+                -0.175096,
+                -0.4363292,
+                1.0
+            ]
+        }
+    },
+    "meshes": {
+        "7": {
+            "link": {
+                "name": "PrimitivePlane",
+                "file": "default"
+            }
+        },
+        "8": {
+            "link": {
+                "name": "PrimitiveCube",
+                "file": "default"
+            }
+        },
+        "9": {
+            "link": {
+                "name": "PrimitiveSphere",
+                "file": "default"
+            }
+        },
+        "10": {
+            "link": {
+                "name": "PrimitiveCone",
+                "file": "default"
+            }
+        },
+        "11": {
+            "link": {
+                "name": "PrimitiveCylinder",
+                "file": "default"
+            }
+        },
+        "12": {
+            "link": {
+                "name": "PrimitiveCircle",
+                "file": "default"
+            }
+        },
+        "22": {
+            "link": {
+                "name": "Circle.001",
+                "file": "ca-hub.glb"
+            }
+        },
+        "23": {
+            "link": {
+                "name": "Plane",
+                "file": "ca-hub.glb"
+            }
+        },
+        "24": {
+            "link": {
+                "name": "mesh-arcade-machine",
+                "file": "ca-hub.glb"
+            }
+        },
+        "25": {
+            "link": {
+                "name": "mesh-arcade-machine.0",
+                "file": "ca-hub.glb"
+            }
+        },
+        "26": {
+            "link": {
+                "name": "Circle.003",
+                "file": "ca-hub.glb"
+            }
+        },
+        "27": {
+            "link": {
+                "name": "Circle.004",
+                "file": "ca-hub.glb"
+            }
+        },
+        "28": {
+            "link": {
+                "name": "Circle.002",
+                "file": "ca-hub.glb"
+            }
+        },
+        "88": {
+            "link": {
+                "name": "Mesh.002",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "89": {
+            "link": {
+                "name": "Mesh",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "90": {
+            "link": {
+                "name": "Mesh.006",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "91": {
+            "link": {
+                "name": "Mesh.003",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "92": {
+            "link": {
+                "name": "Mesh.004",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "93": {
+            "link": {
+                "name": "Mesh.001",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "94": {
+            "link": {
+                "name": "Mesh.005",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "95": {
+            "link": {
+                "name": "Mesh.009",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "96": {
+            "link": {
+                "name": "Mesh.007",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "97": {
+            "link": {
+                "name": "Mesh.013",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "98": {
+            "link": {
+                "name": "Mesh.010",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "99": {
+            "link": {
+                "name": "Mesh.011",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "100": {
+            "link": {
+                "name": "Mesh.008",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "101": {
+            "link": {
+                "name": "Mesh.012",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "165": {
+            "link": {
+                "name": "Cube",
+                "file": "arrow.glb"
+            }
+        },
+        "186": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "teleport-indicator.glb"
+            }
+        },
+        "194": {
+            "link": {
+                "name": "character_witchHat",
+                "file": "avatars.glb"
+            }
+        },
+        "195": {
+            "link": {
+                "name": "character_witch",
+                "file": "avatars.glb"
+            }
+        },
+        "196": {
+            "link": {
+                "name": "character_rogueHead",
+                "file": "avatars.glb"
+            }
+        },
+        "197": {
+            "link": {
+                "name": "character_rogueBody",
+                "file": "avatars.glb"
+            }
+        },
+        "198": {
+            "link": {
+                "name": "character_mageHead",
+                "file": "avatars.glb"
+            }
+        },
+        "199": {
+            "link": {
+                "name": "character_mageBody",
+                "file": "avatars.glb"
+            }
+        },
+        "200": {
+            "link": {
+                "name": "character_knightHead",
+                "file": "avatars.glb"
+            }
+        },
+        "201": {
+            "link": {
+                "name": "character_knightBody",
+                "file": "avatars.glb"
+            }
+        },
+        "202": {
+            "link": {
+                "name": "character_jackHat",
+                "file": "avatars.glb"
+            }
+        },
+        "203": {
+            "link": {
+                "name": "character_jack",
+                "file": "avatars.glb"
+            }
+        },
+        "204": {
+            "link": {
+                "name": "character_duckHead",
+                "file": "avatars.glb"
+            }
+        },
+        "205": {
+            "link": {
+                "name": "character_duck",
+                "file": "avatars.glb"
+            }
+        },
+        "206": {
+            "link": {
+                "name": "character_dogHead",
+                "file": "avatars.glb"
+            }
+        },
+        "207": {
+            "link": {
+                "name": "character_dog",
+                "file": "avatars.glb"
+            }
+        },
+        "208": {
+            "link": {
+                "name": "character_bearHead",
+                "file": "avatars.glb"
+            }
+        },
+        "209": {
+            "link": {
+                "name": "character_bear",
+                "file": "avatars.glb"
+            }
+        },
+        "210": {
+            "link": {
+                "name": "character_barbarianHead",
+                "file": "avatars.glb"
+            }
+        },
+        "211": {
+            "link": {
+                "name": "character_barbarianBody",
+                "file": "avatars.glb"
+            }
+        },
+        "212": {
+            "link": {
+                "name": "Cube",
+                "file": "avatars.glb"
+            },
+            "name": "HandLeft"
+        },
+        "213": {
+            "link": {
+                "name": "Cube.001",
+                "file": "avatars.glb"
+            },
+            "name": "HandRight"
+        },
+        "214": {
+            "link": {
+                "name": "Cube.002",
+                "file": "avatars.glb"
+            },
+            "name": "FirstRight"
+        },
+        "215": {
+            "link": {
+                "name": "Cube.003",
+                "file": "avatars.glb"
+            },
+            "name": "FistLeft"
+        }
+    },
+    "textures": {
+        "13": {
+            "link": {
+                "name": "DefaultFont",
+                "file": "default"
+            }
+        },
+        "123": {
+            "link": {
+                "name": "room.png",
+                "file": "textures\\room.png"
+            }
+        },
+        "125": {
+            "link": {
+                "name": "arcade-machine.png",
+                "file": "textures\\arcade-machine.png"
+            }
+        },
+        "127": {
+            "link": {
+                "name": "arcade-machine.001.png",
+                "file": "textures\\arcade-machine.001.png"
+            }
+        },
+        "129": {
+            "link": {
+                "name": "arcade-machine.002.png",
+                "file": "textures\\arcade-machine.002.png"
+            }
+        },
+        "131": {
+            "link": {
+                "name": "arcade-machine.003.png",
+                "file": "textures\\arcade-machine.003.png"
+            }
+        },
+        "133": {
+            "link": {
+                "name": "arcade-machine.004.png",
+                "file": "textures\\arcade-machine.004.png"
+            }
+        },
+        "135": {
+            "link": {
+                "name": "ca-logo.png",
+                "file": "textures\\ca-logo.png"
+            }
+        },
+        "137": {
+            "link": {
+                "name": "big_tv.png",
+                "file": "textures\\big_tv.png"
+            }
+        },
+        "139": {
+            "link": {
+                "name": "big_arcade.png",
+                "file": "textures\\big_arcade.png"
+            }
+        },
+        "141": {
+            "link": {
+                "name": "rondell.png",
+                "file": "textures\\rondell.png"
+            }
+        },
+        "142": {
+            "link": {
+                "name": "texture_0",
+                "file": "ca-hub.glb"
+            }
+        },
+        "191": {
+            "link": {
+                "name": "texture_0",
+                "file": "avatars.glb"
+            }
+        },
+        "258": {
+            "link": {
+                "name": "icon-mute.png",
+                "file": "textures\\icons\\icon-mute.png"
+            }
+        },
+        "260": {
+            "link": {
+                "name": "icon-unmute.png",
+                "file": "textures\\icons\\icon-unmute.png"
+            }
+        },
+        "264": {
+            "link": {
+                "name": "icon-silence.png",
+                "file": "textures\\icons\\icon-silence.png"
+            }
+        },
+        "266": {
+            "link": {
+                "name": "icon-unsilence.png",
+                "file": "textures\\icons\\icon-unsilence.png"
+            }
+        }
+    },
+    "images": {
+        "14": {
+            "link": {
+                "name": "automat-horizontal-large",
+                "file": "ca-hub.glb"
+            },
+            "compress": false
+        },
+        "122": {
+            "link": {
+                "name": "room.png",
+                "file": "textures\\room.png"
+            }
+        },
+        "124": {
+            "link": {
+                "name": "arcade-machine.png",
+                "file": "textures\\arcade-machine.png"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "126": {
+            "link": {
+                "name": "arcade-machine.001.png",
+                "file": "textures\\arcade-machine.001.png"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "128": {
+            "link": {
+                "name": "arcade-machine.002.png",
+                "file": "textures\\arcade-machine.002.png"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "130": {
+            "link": {
+                "name": "arcade-machine.003.png",
+                "file": "textures\\arcade-machine.003.png"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "132": {
+            "link": {
+                "name": "arcade-machine.004.png",
+                "file": "textures\\arcade-machine.004.png"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "134": {
+            "link": {
+                "name": "ca-logo.png",
+                "file": "textures\\ca-logo.png"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "136": {
+            "link": {
+                "name": "big_tv.png",
+                "file": "textures\\big_tv.png"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "138": {
+            "link": {
+                "name": "big_arcade.png",
+                "file": "textures\\big_arcade.png"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "140": {
+            "link": {
+                "name": "rondell.png",
+                "file": "textures\\rondell.png"
+            },
+            "maxSize": [
+                1024,
+                1024
+            ]
+        },
+        "f0": {
+            "link": {
+                "name": "DefaultFontImage",
+                "file": "default"
+            }
+        },
+        "190": {
+            "link": {
+                "name": "palette_upscaled",
+                "file": "avatars.glb"
+            }
+        },
+        "257": {
+            "link": {
+                "name": "icon-mute.png",
+                "file": "textures\\icons\\icon-mute.png"
+            }
+        },
+        "259": {
+            "link": {
+                "name": "icon-unmute.png",
+                "file": "textures\\icons\\icon-unmute.png"
+            }
+        },
+        "263": {
+            "link": {
+                "name": "icon-silence.png",
+                "file": "textures\\icons\\icon-silence.png"
+            }
+        },
+        "265": {
+            "link": {
+                "name": "icon-unsilence.png",
+                "file": "textures\\icons\\icon-unsilence.png"
+            }
+        }
+    },
+    "materials": {
+        "DefaultFontMaterial": {
+            "link": {
+                "name": "DefaultFontMaterial",
+                "file": "default"
+            },
+            "DistanceFieldVector": {
+                "outlineRange": [
+                    0.4,
+                    0.3
+                ],
+                "vectorTexture": "13",
+                "smoothness": 0.1
+            }
+        },
+        "15": {
+            "link": {
+                "name": "room",
+                "file": "ca-hub.glb"
+            },
+            "Flat": {
+                "flatTexture": "123",
+                "alphaMaskThreshold": 0.0,
+                "color": [
+                    0.9999899,
+                    0.9999927,
+                    1.0,
+                    1.0
+                ]
+            },
+            "pipeline": "173"
+        },
+        "16": {
+            "link": {
+                "name": "ca-logo-mat.002",
+                "file": "ca-hub.glb"
+            },
+            "Flat": {
+                "flatTexture": "135",
+                "alphaMaskThreshold": 0.0
+            },
+            "pipeline": "182",
+            "Phong": {
+                "alphaMaskThreshold": 0.8999999,
+                "diffuseColor": [
+                    1.0,
+                    0.9999899,
+                    0.9999899,
+                    1.0
+                ],
+                "ambientFactor": 1.0,
+                "diffuseTexture": "142",
+                "ambientColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        },
+        "17": {
+            "link": {
+                "name": "arcade-machine.004",
+                "file": "ca-hub.glb"
+            },
+            "pipeline": "173"
+        },
+        "18": {
+            "link": {
+                "name": "arcade-screen.004",
+                "file": "ca-hub.glb"
+            },
+            "Flat": {
+                "color": [
+                    0.6941176,
+                    0.6941106,
+                    0.6941106,
+                    1.0
+                ],
+                "alphaMaskThreshold": 0.0,
+                "flatTexture": "123"
+            },
+            "pipeline": "173"
+        },
+        "19": {
+            "link": {
+                "name": "tv",
+                "file": "ca-hub.glb"
+            },
+            "Flat": {
+                "alphaMaskThreshold": 0.0,
+                "flatTexture": "137"
+            },
+            "pipeline": "173"
+        },
+        "20": {
+            "link": {
+                "name": "big-arcade",
+                "file": "ca-hub.glb"
+            },
+            "Flat": {
+                "flatTexture": "139",
+                "alphaMaskThreshold": 0.0,
+                "color": [
+                    0.9999899,
+                    0.9999927,
+                    1.0,
+                    1.0
+                ]
+            },
+            "pipeline": "173"
+        },
+        "21": {
+            "link": {
+                "name": "rondell",
+                "file": "ca-hub.glb"
+            },
+            "Flat": {
+                "flatTexture": "141",
+                "alphaMaskThreshold": 0.0,
+                "color": [
+                    0.9999899,
+                    0.9999927,
+                    1.0,
+                    1.0
+                ]
+            },
+            "pipeline": "173"
+        },
+        "44": {
+            "name": "material",
+            "Flat": {
+                "flatTexture": "125",
+                "alphaMaskThreshold": 0.0
+            },
+            "pipeline": "173"
+        },
+        "45": {
+            "name": "material.000",
+            "Flat": {
+                "flatTexture": null,
+                "alphaMaskThreshold": 0.0
+            },
+            "pipeline": "173"
+        },
+        "46": {
+            "name": "material.001",
+            "Flat": {
+                "flatTexture": "127",
+                "alphaMaskThreshold": 0.0
+            },
+            "pipeline": "173"
+        },
+        "47": {
+            "name": "material.002",
+            "Flat": {
+                "flatTexture": "129",
+                "alphaMaskThreshold": 0.0
+            },
+            "pipeline": "173"
+        },
+        "48": {
+            "name": "material.003",
+            "Flat": {
+                "flatTexture": "131",
+                "alphaMaskThreshold": 0.0
+            },
+            "Phong": {
+                "alphaMaskThreshold": 0.0,
+                "diffuseTexture": "131"
+            },
+            "pipeline": "173"
+        },
+        "49": {
+            "name": "material.004",
+            "Flat": {
+                "flatTexture": "133",
+                "alphaMaskThreshold": 0.0
+            },
+            "pipeline": "173"
+        },
+        "82": {
+            "link": {
+                "name": "blinn1",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "83": {
+            "link": {
+                "name": "lambert2",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "84": {
+            "link": {
+                "name": "lambert1",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "85": {
+            "link": {
+                "name": "blinn1.001",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "86": {
+            "link": {
+                "name": "lambert2.001",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "87": {
+            "link": {
+                "name": "lambert1.001",
+                "file": "quest_controllers.glb"
+            }
+        },
+        "145": {
+            "name": "material.005",
+            "DistanceFieldVector": {
+                "outlineRange": [
+                    0.3,
+                    0.3
+                ],
+                "vectorTexture": "13",
+                "smoothness": 0.05
+            },
+            "pipeline": "169"
+        },
+        "146": {
+            "name": "material.006",
+            "DistanceFieldVector": {
+                "vectorTexture": "13",
+                "outlineColor": [
+                    0.8784313,
+                    0.744083,
+                    0.0,
+                    1.0
+                ],
+                "outlineRange": [
+                    0.5,
+                    0.3
+                ]
+            },
+            "pipeline": "169"
+        },
+        "149": {
+            "name": "CursorMaterial",
+            "Flat": {
+                "color": [
+                    0.345098,
+                    0.8830587,
+                    1.0,
+                    1.0
+                ]
+            },
+            "pipeline": "172"
+        },
+        "151": {
+            "name": "CreditsText",
+            "Phong": {
+                "diffuseTexture": "13"
+            },
+            "DistanceFieldVector": {
+                "vectorTexture": "13",
+                "outlineRange": [
+                    0.4,
+                    0.4
+                ],
+                "color": [
+                    0.5118432,
+                    0.5568627,
+                    0.5110034,
+                    1.0
+                ],
+                "outlineColor": [
+                    0.5929412,
+                    0.6,
+                    0.5957239,
+                    1.0
+                ],
+                "smoothness": 0.1
+            },
+            "pipeline": "169"
+        },
+        "153": {
+            "name": "CreatedByMaterial",
+            "DistanceFieldVector": {
+                "vectorTexture": "13",
+                "color": [
+                    0.6549019,
+                    0.6548954,
+                    0.6548954,
+                    1.0
+                ],
+                "smoothness": 0.1
+            },
+            "pipeline": "169"
+        },
+        "164": {
+            "link": {
+                "name": "Material",
+                "file": "arrow.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.0,
+                    0.8,
+                    0.7717646,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0,
+                    0.1529411,
+                    0.1477272,
+                    1.0
+                ],
+                "specularColor": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    0.0
+                ]
+            }
+        },
+        "185": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "teleport-indicator.glb"
+            }
+        },
+        "192": {
+            "link": {
+                "name": "palette_material",
+                "file": "avatars.glb"
+            },
+            "Phong": {
+                "ambientFactor": 0.25
+            }
+        },
+        "193": {
+            "link": {
+                "name": "Orange",
+                "file": "avatars.glb"
+            },
+            "Phong": {
+                "ambientFactor": 0.25
+            }
+        },
+        "251": {
+            "name": "Black"
+        },
+        "255": {
+            "name": "IconMute",
+            "pipeline": "173",
+            "Flat": {
+                "flatTexture": "258",
+                "color": [
+                    1.0,
+                    0.9999899,
+                    0.9999899,
+                    1.0
+                ]
+            },
+            "Phong": {
+                "diffuseTexture": "258",
+                "ambientColor": [
+                    0.6156862,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    0.9999899,
+                    0.9999899,
+                    1.0
+                ],
+                "alphaMaskThreshold": 0.5
+            }
+        },
+        "256": {
+            "name": "IconUnmute",
+            "pipeline": "173",
+            "Flat": {
+                "flatTexture": "260"
+            }
+        },
+        "261": {
+            "name": "IconSilence",
+            "pipeline": "173",
+            "Flat": {
+                "flatTexture": "264"
+            }
+        },
+        "262": {
+            "name": "IconUnsilence",
+            "pipeline": "173",
+            "Flat": {
+                "flatTexture": "266"
+            }
+        }
+    },
+    "shaders": {
+        "168": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "170": {
+            "link": {
+                "name": "Dynamic",
+                "file": "default"
+            }
+        },
+        "171": {
+            "link": {
+                "name": "Flat",
+                "file": "default"
+            }
+        },
+        "174": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "176": {
+            "link": {
+                "name": "Static",
+                "file": "default"
+            }
+        },
+        "177": {
+            "link": {
+                "name": "Phong",
+                "file": "default"
+            }
+        },
+        "180": {
+            "link": {
+                "name": "Skinning",
+                "file": "default"
+            }
+        },
+        "181": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "268": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        }
+    },
+    "settings": {
+        "project": {
+            "name": "haven",
+            "version": [
+                0,
+                8,
+                9
+            ],
+            "customIndexHtml": false
+        },
+        "scripting": {
+            "sourcePaths": [
+                "/js/editor-components-bundle.js",
+                "wle-networking/Project/js",
+                "js"
+            ],
+            "framework": {
+                "wonderleap": false
+            }
+        },
+        "rendering": {
+            "clearColor": [
+                1.0,
+                0.9999899,
+                0.9999899,
+                1.0
+            ],
+            "transparentBg": false,
+            "font": "fonts/DejaVuSans.ttf",
+            "compressedTextureAtlasSize": [
+                8192,
+                4096
+            ]
+        },
+        "vr": {
+            "leftEyeObject": "118",
+            "rightEyeObject": "119"
+        },
+        "runtime": {
+            "webxr": {
+                "requiredFeatures": {
+                    "local-floor": true,
+                    "local": false
+                }
+            },
+            "visualizeColliders": true
+        }
+    },
+    "files": [
+        "quest_controllers.glb",
+        "teleport-indicator.glb",
+        "textures/icons/icon-mute.png",
+        "textures/icons/icon-unmute.png",
+        "textures/icons/icon-silence.png",
+        "textures/icons/icon-unsilence.png"
+    ],
+    "animations": {},
+    "skins": {},
+    "pipelines": {
+        "169": {
+            "link": {
+                "name": "DistanceFieldVector",
+                "file": "default"
+            }
+        },
+        "172": {
+            "link": {
+                "name": "Flat Opaque",
+                "file": "default"
+            }
+        },
+        "173": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            }
+        },
+        "175": {
+            "link": {
+                "name": "MeshVisualizer",
+                "file": "default"
+            }
+        },
+        "178": {
+            "link": {
+                "name": "Phong Opaque",
+                "file": "default"
+            }
+        },
+        "179": {
+            "link": {
+                "name": "Phong Opaque Textured",
+                "file": "default"
+            }
+        },
+        "182": {
+            "link": {
+                "name": "Foliage",
+                "file": "default"
+            },
+            "features": {
+                "ALPHA": true,
+                "WITH_FOG": false,
+                "TEXTURED": true
+            }
+        },
+        "183": {
+            "link": {
+                "name": "Particle",
+                "file": "default"
+            }
+        },
+        "269": {
+            "link": {
+                "name": "Depth",
+                "file": "default"
+            }
+        },
+        "270": {
+            "link": {
+                "name": "Depth Textured",
+                "file": "default"
+            }
+        }
+    }
+}
