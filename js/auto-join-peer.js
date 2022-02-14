@@ -90,6 +90,7 @@ WL.registerComponent(
         host: PEER_HOST,
         path: PEER_PATH,
         debug: true,
+        secure: true,
         config: {
           'iceServers': [
             { url: 'stun:arcade.uber.space:42120' },
@@ -226,6 +227,7 @@ WL.registerComponent(
           host: PEER_HOST,
           path: PEER_PATH,
           debug: true,
+          secure: true,
           config: {
             'iceServers': [
               { url: 'stun:arcade.uber.space:42120' },
