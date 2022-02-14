@@ -1,3 +1,6 @@
+const PEER_HOST = 'localhost';
+const PEER_PATH = 'peerjs/haven';  
+
 WL.registerComponent(
   "peer-manager-auto-join",
   {
@@ -84,9 +87,9 @@ WL.registerComponent(
     //
     host: function () {
       this.peer = new Peer(this.serverId ,{
-        host: "localhost",
+        host: PEER_HOST,
         port: 9000,
-        path: '/broker',
+        path: PEER_PATH,
         debug: true,
         config: {
           'iceServers': [
@@ -221,9 +224,9 @@ WL.registerComponent(
         return console.error("peer-manager: Connection id parameter missing");
       if (!this.peer) {
         this.peer = new Peer({
-          host: "localhost",
+          host: PEER_HOST,
           port: 9000,
-          path: '/broker',
+          path: PEER_PATH,
           debug: true,
           config: {
             'iceServers': [
