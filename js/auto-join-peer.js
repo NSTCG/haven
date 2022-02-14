@@ -1,5 +1,5 @@
-const PEER_HOST = 'localhost';
-const PEER_PATH = 'peerjs/haven';  
+const PEER_HOST = 'havenserver.herokuapp.com';
+const PEER_PATH = 'peerjs/haven';
 
 WL.registerComponent(
   "peer-manager-auto-join",
@@ -88,7 +88,6 @@ WL.registerComponent(
     host: function () {
       this.peer = new Peer(this.serverId ,{
         host: PEER_HOST,
-        port: 9000,
         path: PEER_PATH,
         debug: true,
         config: {
@@ -225,7 +224,6 @@ WL.registerComponent(
       if (!this.peer) {
         this.peer = new Peer({
           host: PEER_HOST,
-          port: 9000,
           path: PEER_PATH,
           debug: true,
           config: {
