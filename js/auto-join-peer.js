@@ -3,8 +3,6 @@
 // and set secure to false and the port to 9000 in created Peers
 // for things to work correctly
 
-const PEER_HOST = 'havenserver.herokuapp.com';
-const PEER_PATH = 'peerjs/haven';
 
 WL.registerComponent(
   "peer-manager-auto-join",
@@ -25,7 +23,9 @@ WL.registerComponent(
     // Initialization
     //
     init: function () {
-      window.t = this;
+      this.isLocalhost = window.location.hostname === 'localhost';
+      this.PEER_HOST = this.isLocalhost ? 'localhost' : 'havenserver.herokuapp.com';
+      this.PEER_PATH = 'peerjs/haven';
 
       this.streams = {};
       this.metadatas = {}
@@ -95,11 +95,12 @@ WL.registerComponent(
       const mockUsername = `user ${Date.now()}`;
       const mockRoomName = `room ${Date.now()}`;
       const hostId = `host-${mockUsername}-${mockRoomName}`;
-      this.peer = new Peer(hostId, {
-        host: PEER_HOST,
-        path: PEER_PATH,
+
+      let peerObject = {
+        host: this.PEER_HOST,
+        path: this.PEER_PATH,
         debug: true,
-        secure: true,
+        secure: !this.isLocalhost,
         config: {
           'iceServers': [
             { url: 'stun:arcade.uber.space:42120' },
@@ -107,7 +108,10 @@ WL.registerComponent(
             { url: 'turn:arcade.uber.space:42120?transport=udp', username: 'chess', credential: 'bGghEDegsXNrJaeGKp88mMPhPTTL' },
           ]
         },
-        });
+      }
+      if(this.isLocalhost) peerObject['port'] = 9000;
+
+      this.peer = new Peer(hostId, peerObject);
   
       this.peer.on("open", this._onHostOpen.bind(this));
       this.peer.on("error", this._onHostError.bind(this));
@@ -236,11 +240,11 @@ WL.registerComponent(
       this.userId = `user-${mockUsername}_${id}`;
       this.serverId = id;
       if (!this.peer) {
-        this.peer = new Peer(this.userId, {
-          host: PEER_HOST,
-          path: PEER_PATH,
+        let peerObject = {
+          host: this.PEER_HOST,
+          path: this.PEER_PATH,
           debug: true,
-          secure: true,
+          secure: !this.isLocalhost,
           config: {
             'iceServers': [
               { url: 'stun:arcade.uber.space:42120' },
@@ -248,7 +252,10 @@ WL.registerComponent(
               { url: 'turn:arcade.uber.space:42120?transport=udp', username: 'chess', credential: 'bGghEDegsXNrJaeGKp88mMPhPTTL' },
             ]
           },
-          });;
+        }
+        if(this.isLocalhost) peerObject['port'] = 9000;
+
+        this.peer = new Peer(this.userId, peerObject);
         this.peer.on("open", this._clientOnOpen.bind(this));
         this.peer.on("disconnected", this._onDisconnected.bind(this));
         this.connectionId = id;
