@@ -1,3 +1,8 @@
+// TODO: Make local development easier.
+// Currently you need to change PEER_HOST to localhost
+// and set secure to false and the port to 9000 in created Peers
+// for things to work correctly
+
 const PEER_HOST = 'havenserver.herokuapp.com';
 const PEER_PATH = 'peerjs/haven';
 
@@ -86,7 +91,11 @@ WL.registerComponent(
     // Host functions
     //
     host: function () {
-      this.peer = new Peer(this.serverId ,{
+      // TODO: Username and room name will eventually become user-assignable fields
+      const mockUsername = `user ${Date.now()}`;
+      const mockRoomName = `room ${Date.now()}`;
+      const hostId = `host-${mockUsername}-${mockRoomName}`;
+      this.peer = new Peer(hostId, {
         host: PEER_HOST,
         path: PEER_PATH,
         debug: true,
@@ -222,8 +231,12 @@ WL.registerComponent(
     connect: function (id) {
       if (!id)
         return console.error("peer-manager: Connection id parameter missing");
+      // TODO: Username will eventually become a user-assignable field
+      const mockUsername = `user ${Date.now()}`;
+      this.userId = `user-${mockUsername}_${id}`;
+      this.serverId = id;
       if (!this.peer) {
-        this.peer = new Peer({
+        this.peer = new Peer(this.userId, {
           host: PEER_HOST,
           path: PEER_PATH,
           debug: true,
