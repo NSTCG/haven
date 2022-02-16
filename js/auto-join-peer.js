@@ -25,6 +25,7 @@ WL.registerComponent(
     init: function () {
       this.isLocalhost = window.location.hostname === 'localhost';
       this.PEER_HOST = this.isLocalhost ? 'localhost' : 'havenserver.herokuapp.com';
+      console.log(`On localhost? ${this.isLocalhost}\nPeer host is ${this.PEER_HOST}`);
       this.PEER_PATH = 'peerjs/haven';
       this.username = 'default username';
       this.roomName = 'default roomname';
@@ -65,7 +66,8 @@ WL.registerComponent(
         this.registeredNetworkCallbacks = {};
       
       // Signal to parent page on Haven site
-      window.parent.postMessage('ready');
+      console.log(`Sending ready message to ${window.parent.location}`);
+      window.parent.postMessage('ready', location.origin);
       window.addEventListener('message', e => { 
         if (e.data === 'ready') return;
         this.onPayloadReceived(e.data);
@@ -568,7 +570,8 @@ WL.registerComponent(
         this.join(payload.roomId);
       }
 
-      window.parent.postMessage('havenconnected');
+      console.log(`Sending havenconnected message to ${window.parent.location}`);
+      window.parent.postMessage('havenconnected', location.origin);
     }
   }
 );
