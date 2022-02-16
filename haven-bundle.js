@@ -49,6 +49,8 @@ WL.registerComponent(
       this.isLocalhost = window.location.hostname === 'localhost';
       this.PEER_HOST = this.isLocalhost ? 'localhost' : 'havenserver.herokuapp.com';
       this.PEER_PATH = 'peerjs/haven';
+      this.username = 'default username';
+      this.roomName = 'default roomname';
 
       this.streams = {};
       this.metadatas = {}
@@ -84,6 +86,13 @@ WL.registerComponent(
       if (!this.disconnectCallbacks) this.disconnectCallbacks = [];
       if (!this.registeredNetworkCallbacks)
         this.registeredNetworkCallbacks = {};
+      
+      // Signal to parent page on Haven site
+      window.parent.postMessage('ready');
+      window.addEventListener('message', e => { 
+        if (e.data === 'ready') return;
+        this.onPayloadReceived(e.data);
+      });
     },
     start: function () {
       window.peerc = this;
@@ -114,10 +123,7 @@ WL.registerComponent(
     // Host functions
     //
     host: function () {
-      // TODO: Username and room name will eventually become user-assignable fields
-      const mockUsername = `user ${Date.now()}`;
-      const mockRoomName = `room ${Date.now()}`;
-      const hostId = `host-${mockUsername}-${mockRoomName}`;
+      const hostId = `host-${this.username}-${this.roomName}`;
 
       let peerObject = {
         host: this.PEER_HOST,
@@ -251,16 +257,14 @@ WL.registerComponent(
     //
     // Client functions
     //
-    join: function () {
+    join: function (id) {
       this.joining = true;
-      this.connect(this.serverId);
+      this.connect(id);
     },
     connect: function (id) {
       if (!id)
         return console.error("peer-manager: Connection id parameter missing");
-      // TODO: Username will eventually become a user-assignable field
-      const mockUsername = `user ${Date.now()}`;
-      this.userId = `user-${mockUsername}_${id}`;
+      this.userId = `user-${this.username}_${id}`;
       this.serverId = id;
       if (!this.peer) {
         let peerObject = {
@@ -572,6 +576,23 @@ WL.registerComponent(
         }
       }
     },
+    onPayloadReceived: function(rawPayload) {
+      if (typeof rawPayload === 'object') return; // We should only be receiving a stringified payload
+
+      const payload = JSON.parse(rawPayload);
+      if (payload.type === 'host') {
+        const [username, roomName] = payload.roomId.split('-').splice(1);
+        this.username = username;
+        this.roomName = roomName;
+        this.host();
+      }
+      else if (payload.type === 'join') {
+        this.username = payload.username;
+        this.join(payload.roomId);
+      }
+
+      window.parent.postMessage('havenconnected');
+    }
   }
 );
 
