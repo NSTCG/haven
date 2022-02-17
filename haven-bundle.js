@@ -21,12 +21,6 @@
  */
 //# sourceMappingURL=editor-components-bundle.js.map
 
-// TODO: Make local development easier.
-// Currently you need to change PEER_HOST to localhost
-// and set secure to false and the port to 9000 in created Peers
-// for things to work correctly
-
-
 WL.registerComponent(
   "peer-manager-auto-join",
   {
@@ -160,7 +154,7 @@ WL.registerComponent(
     _onHostOpen: function (id) {
       isHost = true;
       this.serverId = id;
-      this.metadatas[this.serverId] = { username: "Host"};
+      this.metadatas[this.serverId] = { username: this.username };
       this.activePlayers[this.serverId] = {};
       for (let i = 0; i < this.connectionEstablishedCallbacks.length; i++) {
         this.connectionEstablishedCallbacks[i]();
@@ -413,6 +407,8 @@ WL.registerComponent(
       }
       if (this.activePlayers[peerId]) {
         if (Object.keys(this.activePlayers[peerId]).length !== 0) {
+          console.log("removing " + peerId);
+          console.log(this.activePlayers);
           this.activePlayers[peerId].reset();
           this.networkPlayerSpawner.returnEntity(this.activePlayers[peerId]);
         }
@@ -455,7 +451,7 @@ WL.registerComponent(
     _clientOnOpen: function () {
       this.connection = this.peer.connect(this.connectionId, {
         // reliable: true,
-        metadata: { username: "TestName"},
+        metadata: { username: this.username },
       });
       this.connection.on("open", this._onClientConnected.bind(this));
       this.connection.on("data", this._onClientDataRecieved.bind(this));
@@ -635,6 +631,7 @@ WL.registerComponent("peer-networked-player", {
 
   reset: function() {
     this.head.resetTranslationRotation();
+    this.head.children[0].resetTranslationRotation();
     this.rightHand.resetTranslationRotation();
     this.leftHand.resetTranslationRotation();
   },
@@ -664,9 +661,10 @@ WL.registerComponent("peer-networked-player-spawner", {
     this.count = 0;
   },
 
-  getEntity: function() {
+  getEntity: function(metadata, roomName) {
     const player = WL.scene.addObject(1);
     const children = WL.scene.addObjects(3, player);
+    const nametag = WL.scene.addObject(children[0]._id);
 
     children[0].name = "Head";
     children[0].addComponent("mesh", {
@@ -684,6 +682,14 @@ WL.registerComponent("peer-networked-player-spawner", {
     children[2].addComponent("mesh", {
       mesh: this.rightHandMesh,
       material: this.rightHandMaterial,
+    });
+
+    nametag.name = "Nametag";
+    nametag.addComponent("text").text = metadata.username;
+    nametag.addComponent("player-name-display", {
+      positionParent: children[0],
+      positionYOffset: 1.6,
+      target: new WL.Object(2).getComponent('wasd-controls').headObject
     });
 
     player.name = `Player ${this.count++}`;
