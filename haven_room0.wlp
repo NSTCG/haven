@@ -2542,7 +2542,8 @@
             "link": {
                 "name": "Plane",
                 "file": "floor.glb"
-            }
+            },
+            "name": "Ground"
         },
         "299": {
             "link": {
@@ -2566,14 +2567,15 @@
                 0.0,
                 -5.5000004,
                 1.0
-            ]
+            ],
+            "parent": "317"
         },
         "302": {
             "link": {
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2598,7 +2600,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2623,7 +2625,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2648,7 +2650,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2673,7 +2675,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2698,7 +2700,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2723,7 +2725,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2748,7 +2750,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2773,7 +2775,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2798,7 +2800,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2823,7 +2825,7 @@
                 "name": "Column",
                 "file": "column.glb"
             },
-            "parent": null,
+            "parent": "317",
             "transformation": [
                 37.5,
                 0.0,
@@ -2854,9 +2856,70 @@
                         "autoplay": true,
                         "spatial": false,
                         "volume": 0.2
-                    }
+                    },
+                    "active": false
                 }
             ]
+        },
+        "314": {
+            "name": "Text",
+            "components": [
+                {
+                    "type": "text"
+                },
+                {
+                    "type": "player-name-display",
+                    "player-name-display": {
+                        "target": "43",
+                        "positionParent": "316"
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "parent": "316",
+            "deleted": true
+        },
+        "316": {
+            "name": "Test",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.310306,
+                2.7372496,
+                0.0,
+                1.0
+            ],
+            "deleted": true
+        },
+        "317": {
+            "name": "Columns"
         }
     },
     "meshes": {
@@ -4079,7 +4142,6 @@
         "scripting": {
             "sourcePaths": [
                 "/js/editor-components-bundle.js",
-                "wle-networking/Project/js",
                 "js"
             ],
             "framework": {
