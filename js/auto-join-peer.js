@@ -17,7 +17,8 @@ WL.registerComponent(
     // Initialization
     //
     init: function () {
-      this.isLocalhost = window.location.hostname === 'localhost';
+      window.pc = this;
+      this.isLocalhost = false;
       this.PEER_HOST = this.isLocalhost ? 'localhost' : 'havenserver.herokuapp.com';
       console.log(`On localhost? ${this.isLocalhost}\nPeer host is ${this.PEER_HOST}`);
       this.PEER_PATH = 'peerjs/haven';
@@ -96,7 +97,7 @@ WL.registerComponent(
     // Host functions
     //
     host: function () {
-      const hostId = `host-${this.username}-${this.roomName}`;
+      const hostId = `testing`;
 
       let peerObject = {
         host: this.PEER_HOST,
@@ -116,7 +117,7 @@ WL.registerComponent(
       this.peer = new Peer(hostId, peerObject);
   
       this.peer.on("open", this._onHostOpen.bind(this));
-      this.peer.on("error", this._onHostError.bind(this));
+      // this.peer.on("error", this._onHostError.bind(this));
     },
     kick: function (id) {
       if (!this.currentDataPackage["disconnect"])
@@ -238,7 +239,7 @@ WL.registerComponent(
       if (!id)
         return console.error("peer-manager: Connection id parameter missing");
       this.userId = `user-${this.username}_${id}`;
-      this.serverId = id;
+      this.serverId = 'testing';
       if (!this.peer) {
         let peerObject = {
           host: this.PEER_HOST,
@@ -258,7 +259,7 @@ WL.registerComponent(
         this.peer = new Peer(this.userId, peerObject);
         this.peer.on("open", this._clientOnOpen.bind(this));
         this.peer.on("disconnected", this._onDisconnected.bind(this));
-        this.connectionId = id;
+        this.connectionId = 'testing';
         this.peer.on(
           "call",
           function (call) {

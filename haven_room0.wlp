@@ -1257,6 +1257,9 @@
                         "rightHandMesh": "9",
                         "rightHandMaterial": "251"
                     }
+                },
+                {
+                    "type": "testing-buttons"
                 }
             ]
         },
@@ -2920,6 +2923,98 @@
         },
         "317": {
             "name": "Columns"
+        },
+        "318": {
+            "name": "JoinButton",
+            "parent": "188",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Join\n"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.3,
+                                0.1,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.8366223,
+                -3.570949,
+                1.0
+            ]
+        },
+        "319": {
+            "name": "HostButton",
+            "parent": "188",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Host"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                0.3,
+                                0.1,
+                                0.1
+                            ]
+                        }
+                    }
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.5528085,
+                -3.570949,
+                1.0
+            ]
         }
     },
     "meshes": {
