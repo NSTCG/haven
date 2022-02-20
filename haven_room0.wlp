@@ -4369,7 +4369,7 @@
             "visualizeColliders": true
         },
         "ar": {
-            "framework": "none"
+            "framework": "webxr"
         }
     },
     "files": [
