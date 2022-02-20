@@ -463,6 +463,9 @@
                         "type": "hand left"
                     },
                     "active": true
+                },
+                {
+                    "type": "mobile-active-switch"
                 }
             ]
         },
@@ -471,7 +474,12 @@
                 "name": "Bottom_Button<LeftQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "102"
+            "parent": "102",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "104": {
             "link": {
@@ -496,42 +504,72 @@
                 -0.0321104,
                 1.0
             ],
-            "parent": "102"
+            "parent": "102",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "105": {
             "link": {
                 "name": "GripTrigger<LeftQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "102"
+            "parent": "102",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "106": {
             "link": {
                 "name": "Option_Button<LeftQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "102"
+            "parent": "102",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "107": {
             "link": {
                 "name": "Thumbstick<LeftQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "102"
+            "parent": "102",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "108": {
             "link": {
                 "name": "Top_Button<LeftQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "102"
+            "parent": "102",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "109": {
             "link": {
                 "name": "Trigger<LeftQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "102"
+            "parent": "102",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "110": {
             "link": {
@@ -564,6 +602,9 @@
                         "type": "hand right"
                     },
                     "active": true
+                },
+                {
+                    "type": "mobile-active-switch"
                 }
             ]
         },
@@ -572,49 +613,84 @@
                 "name": "Bottom_Button.001<RightQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "110"
+            "parent": "110",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "112": {
             "link": {
                 "name": "ControllerMain.001<RightQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "110"
+            "parent": "110",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "113": {
             "link": {
                 "name": "GripTrigger.001<RightQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "110"
+            "parent": "110",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "114": {
             "link": {
                 "name": "Option_Button.001<RightQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "110"
+            "parent": "110",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "115": {
             "link": {
                 "name": "Thumbstick.001<RightQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "110"
+            "parent": "110",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "116": {
             "link": {
                 "name": "Top_Button.001<RightQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "110"
+            "parent": "110",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "117": {
             "link": {
                 "name": "Trigger.001<RightQuestController",
                 "file": "quest_controllers.glb"
             },
-            "parent": "110"
+            "parent": "110",
+            "components": [
+                {
+                    "active": true
+                }
+            ]
         },
         "118": {
             "name": "LeftEye",
@@ -742,7 +818,8 @@
                         "text": "Previous",
                         "justification": "line",
                         "material": "145"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "transformation": [
@@ -774,7 +851,8 @@
                         "material": "145",
                         "text": "Next",
                         "justification": "line"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "transformation": [
@@ -840,7 +918,11 @@
                     "mesh": {
                         "mesh": "9",
                         "material": "149"
-                    }
+                    },
+                    "active": true
+                },
+                {
+                    "type": "mobile-active-switch"
                 }
             ],
             "transformation": [
@@ -936,7 +1018,11 @@
                     "mesh": {
                         "mesh": "8",
                         "material": "149"
-                    }
+                    },
+                    "active": true
+                },
+                {
+                    "type": "mobile-active-switch"
                 }
             ],
             "transformation": [
@@ -967,7 +1053,11 @@
                     "mesh": {
                         "mesh": "8",
                         "material": "149"
-                    }
+                    },
+                    "active": true
+                },
+                {
+                    "type": "mobile-active-switch"
                 }
             ],
             "transformation": [
@@ -1001,7 +1091,11 @@
                     "mesh": {
                         "mesh": "9",
                         "material": "149"
-                    }
+                    },
+                    "active": true
+                },
+                {
+                    "type": "mobile-active-switch"
                 }
             ],
             "transformation": [
@@ -1052,9 +1146,6 @@
                         "handedness": "left",
                         "floorGroup": 0
                     }
-                },
-                {
-                    "type": "vr-mode-active-switch"
                 }
             ]
         },
@@ -2333,7 +2424,8 @@
                     "mesh": {
                         "mesh": "7",
                         "material": "262"
-                    }
+                    },
+                    "active": true
                 },
                 {
                     "type": "collision",
@@ -2341,7 +2433,8 @@
                         "sphere": {
                             "radius": 0.0399999
                         }
-                    }
+                    },
+                    "active": true
                 },
                 {
                     "type": "button-toggle",
@@ -2349,13 +2442,15 @@
                         "activeMaterial": "256",
                         "inativeMaterial": "256",
                         "inactiveMaterial": "255"
-                    }
+                    },
+                    "active": true
                 },
                 {
                     "type": "button-mute",
                     "button-mute": {
                         "peerManagerObject": "188"
-                    }
+                    },
+                    "active": true
                 }
             ],
             "transformation": [
@@ -4230,7 +4325,7 @@
             "version": [
                 0,
                 8,
-                9
+                8
             ],
             "customIndexHtml": false
         },
@@ -4272,6 +4367,9 @@
                 }
             },
             "visualizeColliders": true
+        },
+        "ar": {
+            "framework": "none"
         }
     },
     "files": [
