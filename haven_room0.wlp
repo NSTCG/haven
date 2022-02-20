@@ -309,14 +309,25 @@
             "parent": "252",
             "components": [
                 {
-                    "type": "wasd-controls",
-                    "wasd-controls": {
+                    "type": "player-height"
+                },
+                {
+                    "type": "wasd_manual",
+                    "wasd_manual": {
                         "headObject": "120",
-                        "speed": 0.1
+                        "restrictY": true
                     }
                 },
                 {
-                    "type": "player-height"
+                    "type": "1TapMovement(AR/VR)",
+                    "1TapMovement(AR": {
+                        "VR)": {
+                            "cardboard_camera": "118",
+                            "restrictY": true,
+                            "speed": 0.1,
+                            "starting_delay": 1.0
+                        }
+                    }
                 }
             ]
         },
