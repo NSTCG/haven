@@ -667,7 +667,7 @@ WL.registerComponent("peer-networked-player-spawner", {
     nametag.addComponent("player-name-display", {
       positionParent: children[0],
       positionYOffset: 1.6,
-      target: new WL.Object(2).getComponent('wasd-controls').headObject
+      target: new WL.Object(2).getComponent('wasd-manual').headObject
     });
 
     player.name = `Player ${this.count++}`;

@@ -312,13 +312,6 @@
                     "type": "player-height"
                 },
                 {
-                    "type": "wasd_manual",
-                    "wasd_manual": {
-                        "headObject": "120",
-                        "restrictY": true
-                    }
-                },
-                {
                     "type": "1TapMovement(AR/VR)",
                     "1TapMovement(AR": {
                         "VR)": {
@@ -327,6 +320,13 @@
                             "speed": 0.1,
                             "starting_delay": 1.0
                         }
+                    }
+                },
+                {
+                    "type": "wasd-manual",
+                    "wasd-manual": {
+                        "restrictY": true,
+                        "headObject": "120"
                     }
                 }
             ]
@@ -754,11 +754,11 @@
                     "type": "mouse-look"
                 },
                 {
-                    "type": "vr-mode-active-switch",
-                    "vr-mode-active-switch": {
-                        "activateComponents": "in non-VR",
-                        "affectChildren": false
-                    }
+                    "type": "device-orientation-look",
+                    "active": false
+                },
+                {
+                    "type": "360-switch"
                 }
             ],
             "transformation": [
@@ -775,7 +775,7 @@
                 1.0,
                 0.0,
                 -2.384185791015625e-7,
-                -0.3515384,
+                0.0,
                 0.0,
                 1.0
             ],
@@ -1176,6 +1176,18 @@
                         "cursorObject": "148",
                         "cursorRayObject": "158"
                     }
+                },
+                {
+                    "type": "teleport",
+                    "teleport": {
+                        "teleportIndicatorMeshObject": "187",
+                        "camRoot": "43",
+                        "eyeLeft": "118",
+                        "cam": "120",
+                        "eyeRight": "119",
+                        "handedness": "input component",
+                        "floorGroup": 0
+                    }
                 }
             ]
         },
@@ -1327,7 +1339,31 @@
             "link": {
                 "name": "TeleportIndicator",
                 "file": "teleport-indicator.glb"
-            }
+            },
+            "components": [
+                null,
+                {
+                    "type": "mobile-active-switch"
+                }
+            ],
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.001,
+                0.0,
+                1.0
+            ]
         },
         "188": {
             "name": "Networking",
@@ -2530,9 +2566,9 @@
                 0.0,
                 0.0299999,
                 0.0,
-                -0.3073905,
-                -0.175096,
-                -0.4363292,
+                -0.3022422,
+                -0.0872062,
+                -0.4363291,
                 1.0
             ]
         },
@@ -2652,7 +2688,28 @@
                 "name": "Plane",
                 "file": "floor.glb"
             },
-            "name": "Ground"
+            "name": "Ground",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                null
+            ]
         },
         "299": {
             "link": {
@@ -3120,6 +3177,61 @@
                 1.5528085,
                 -3.570949,
                 1.0
+            ]
+        },
+        "320": {
+            "name": "device",
+            "parent": "120",
+            "deleted": true
+        },
+        "321": {
+            "name": "NonVr",
+            "parent": "43",
+            "deleted": true
+        },
+        "322": {
+            "name": "Collision",
+            "parent": "292",
+            "transformation": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 2.0
+                        },
+                        "collider": "aabb",
+                        "aabb": {
+                            "extents": [
+                                100.0,
+                                0.001,
+                                100.0
+                            ]
+                        },
+                        "groups": 1
+                    },
+                    "active": true
+                },
+                {
+                    "type": "collision_disable"
+                }
             ]
         }
     },
@@ -4338,7 +4450,7 @@
                 8,
                 8
             ],
-            "customIndexHtml": false
+            "customIndexHtml": true
         },
         "scripting": {
             "sourcePaths": [
@@ -4377,7 +4489,7 @@
                     "local": false
                 }
             },
-            "visualizeColliders": true
+            "visualizeColliders": false
         },
         "ar": {
             "framework": "webxr"
