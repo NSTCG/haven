@@ -328,6 +328,15 @@
                         "restrictY": true,
                         "headObject": "120"
                     }
+                },
+                {
+                    "type": "set_boundary",
+                    "set_boundary": {
+                        "right_bound": 28.0,
+                        "left_bound": 20.0,
+                        "back_bound": 6.0,
+                        "front_bound": 6.0
+                    }
                 }
             ]
         },
