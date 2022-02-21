@@ -4464,7 +4464,8 @@
         "scripting": {
             "sourcePaths": [
                 "/js/editor-components-bundle.js",
-                "js"
+                "js",
+                "js/locomotion"
             ],
             "framework": {
                 "wonderleap": false
