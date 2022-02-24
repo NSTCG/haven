@@ -129,26 +129,19 @@
   </head>
   <body>
     <canvas id="canvas" style="width: 100%; height: 100%; display: block;" tabindex="0"></canvas>
-    <div class="xr-button-container" style="zoom:0.65">
-
-      <div class="mobile-div" >
-        <div style=" width: 128px; position: absolute; left:10%; bottom:5%">
-          <img src="images/base2.png" style="opacity: 0.5;" />
-          <div id="stick1" style="position: absolute; left:32px; top:32px;">
-            <img src="images/joystick-blue.png" style="opacity: 0.5;" />
-          </div>
+    <div class="xr-button-container" style="zoom:0.65;">
+      <div style=" width: 128px; position: absolute; left:10%; bottom:5%">
+        <img src="images/base2.png" style="opacity: 0.5;" />
+        <div id="stick1" style="position: absolute; left:32px; top:32px;">
+          <img src="images/joystick-blue.png" style="opacity: 0.5;" />
         </div>
-      
-        <div style=" width: 128px; position: absolute; right:10%; bottom:5%;">
-          <img src="images/joystick-base.png" style="opacity: 0.5;" />
-          <div id="stick2" style="position: absolute; left:32px; top:32px;">
-            <img src="images/joystick-blue.png" style="opacity: 0.5;" />
-          </div>
+      </div>
+  
+      <div style=" width: 128px; position: absolute; right:10%; bottom:5%;">
+        <img src="images/joystick-base.png" style="opacity: 0.5;" />
+        <div id="stick2" style="position: absolute; left:32px; top:32px;">
+          <img src="images/joystick-blue.png" style="opacity: 0.5;" />
         </div>
-      
-        <image src="images/360.png" type="button" value="Full screen" onclick="switch360()"
-          style="border:10px; bottom:10px; height:50px;width:50px; left:5px; position:absolute;  "></image>
-      
       </div>
   
       <script>
@@ -286,11 +279,12 @@
   
       <image src="images/test.png" type="button" value="Full screen" onclick="requestFullScreen()"
         style="border:10px; bottom:10px; height:50px;width:50px;right:5px; position:absolute;  "></image>
-
-        
-      
+      <image src="images/360.png" type="button" value="Full screen" onclick="switch360()"
+        style="border:10px; bottom:10px; height:50px;width:50px; left:5px; position:absolute;  "></image>
   
       <script>
+        window.view360=false;
+
         function requestFullScreen() {
           if (document.fullscreenElement) {
             document.exitFullscreen()
@@ -302,11 +296,12 @@
         }
   
         function switch360() {
-          if (window.view360 != true) {
-            window.view360 = true;
+          if (window.IsMobile){
+            window.view360=!window.view360
           }
           else{
-            window.view360 = false;
+            console.log("This feature is intended for mobile devices");
+            window.alert("This feature is intended for mobile devices");
           }
         }
       </script>
