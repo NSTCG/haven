@@ -18,8 +18,8 @@ WL.registerComponent(
   },
   {
     init: function () {
-      window.j1x=0;
-      window.j1y=0;
+      window.j2x=0;
+      window.j2y=0;
       this.speed = this.normal_speed;
       this.up = false;
       this.right = false;
@@ -34,6 +34,8 @@ WL.registerComponent(
       window.addEventListener("keydown", this.press.bind(this));
       window.addEventListener("keyup", this.release.bind(this));
 
+      this.tempVec = new Float32Array(3);
+
     },
 
     start: function () {
@@ -42,7 +44,13 @@ WL.registerComponent(
 
     update: function () {
 
+      this.object.getTranslationWorld(this.tempVec);
+      this.object.resetTranslation();
+
       this.Main_controller();
+
+      this.object.setTranslationWorld(this.tempVec);
+
       let direction = [0, 0, 0];
 
       if (this.up_main) direction[2] -= 1.0;
@@ -59,14 +67,13 @@ WL.registerComponent(
     },
 
     Main_controller: function(){
-      if(window.j1x!=null)this.object.rotateAxisAngleDegObject([0, 1, 0], -0.65 * window.j1x);
-      if(window.j1y!=null)this.object.rotateAxisAngleDegObject([1, 0, 0], -0.65 * window.j1y); // vertical rotation ( needs to be fixed)
+      if(window.j2x!=null)this.object.rotateAxisAngleDeg([0, 1, 0], -0.65 * window.j2x);
+      if(window.j2y!=null)this.object.rotateAxisAngleDegObject([1, 0, 0], -0.65 * window.j2y); // vertical rotation ( needs to be fixed)
 
-
-      this.up_main = window.j2y < -0.1  || this.up ? true : false;   //add || window.j1y < -0.1 if  you wanna use left joystick for locomotion too 
-      this.down_main = window.j2y > 0.1 || this.down? true : false;  //add || window.j1y < -0.1 if you wanna use left joystick for locomotion too 
-      this.right_main = window.j2x > 0.1 || this.right ? true : false;  
-      this.left_main = window.j2x < -0.1 ||this.left ? true : false;
+      this.up_main = window.j1y < -0.1  || this.up ? true : false;   //add || window.j1y < -0.1 if  you wanna use left joystick for locomotion too 
+      this.down_main = window.j1y > 0.1 || this.down? true : false;  //add || window.j1y < -0.1 if you wanna use left joystick for locomotion too 
+      this.right_main = window.j1x > 0.1 || this.right ? true : false;  
+      this.left_main = window.j1x < -0.1 ||this.left ? true : false;
     },
 
     press: function (e) {
