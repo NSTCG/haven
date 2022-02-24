@@ -1384,7 +1384,8 @@
                         "playerHead": "120",
                         "playerRightHand": "162",
                         "playerLeftHand": "163",
-                        "networkPlayerPool": "188"
+                        "networkPlayerPool": "188",
+                        "localPeerServer": false
                     }
                 },
                 {
@@ -1406,7 +1407,10 @@
                     }
                 },
                 {
-                    "type": "testing-buttons"
+                    "type": "testing-buttons",
+                    "testing-buttons": {
+                        "peerObject": "188"
+                    }
                 }
             ]
         },
@@ -4457,7 +4461,7 @@
             "version": [
                 0,
                 8,
-                8
+                9
             ],
             "customIndexHtml": true
         },

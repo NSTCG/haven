@@ -11,15 +11,15 @@ WL.registerComponent(
     playerLeftHand: { type: WL.Type.Object },
     networkPlayerPool: { type: WL.Type.Object },
     voiceEnabled: { type: WL.Type.Bool, default: true },
+    localPeerServer: { type: WL.Type.Bool, default: false },
   },
   {
     //
     // Initialization
     //
     init: function () {
-      window.pc = this;
-      this.isLocalhost = false;
-      this.PEER_HOST = this.isLocalhost ? 'localhost' : 'havenserver.herokuapp.com';
+      this.isLocalhost = window.location.hostname === 'localhost';
+      this.PEER_HOST = this.localPeerServer ? 'localhost' : 'havenserver.herokuapp.com';
       console.log(`On localhost? ${this.isLocalhost}\nPeer host is ${this.PEER_HOST}`);
       this.PEER_PATH = 'peerjs/haven';
       this.username = 'default username';
@@ -97,13 +97,13 @@ WL.registerComponent(
     // Host functions
     //
     host: function () {
-      const hostId = `testing`;
+      const hostId = `host-${this.username}-${this.roomName}`;
 
       let peerObject = {
         host: this.PEER_HOST,
         path: this.PEER_PATH,
         debug: true,
-        secure: !this.isLocalhost,
+        secure: !this.localPeerServer,
         config: {
           'iceServers': [
             { url: 'stun:arcade.uber.space:42120' },
@@ -112,7 +112,7 @@ WL.registerComponent(
           ]
         },
       }
-      if(this.isLocalhost) peerObject['port'] = 9000;
+      if(this.localPeerServer) peerObject['port'] = 9000;
 
       this.peer = new Peer(hostId, peerObject);
   
@@ -239,13 +239,13 @@ WL.registerComponent(
       if (!id)
         return console.error("peer-manager: Connection id parameter missing");
       this.userId = `user-${this.username}_${id}`;
-      this.serverId = 'testing';
+      this.serverId = id;
       if (!this.peer) {
         let peerObject = {
           host: this.PEER_HOST,
           path: this.PEER_PATH,
           debug: true,
-          secure: !this.isLocalhost,
+          secure: !this.localPeerServer,
           config: {
             'iceServers': [
               { url: 'stun:arcade.uber.space:42120' },
@@ -254,12 +254,12 @@ WL.registerComponent(
             ]
           },
         }
-        if(this.isLocalhost) peerObject['port'] = 9000;
+        if(this.localPeerServer) peerObject['port'] = 9000;
 
         this.peer = new Peer(this.userId, peerObject);
         this.peer.on("open", this._clientOnOpen.bind(this));
         this.peer.on("disconnected", this._onDisconnected.bind(this));
-        this.connectionId = 'testing';
+        this.connectionId = id;
         this.peer.on(
           "call",
           function (call) {
